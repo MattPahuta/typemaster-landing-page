@@ -1,0 +1,170 @@
+/* ----------------- */
+/* Custom Properties */
+/* ----------------- */
+:root {
+  /* colors */
+  --clr-white: #FFFFFF;
+  --clr-gray: #E8EFF2;
+  --clr-brand-primary: #F16718; 
+  --clr-brand-light: #FF9B62;
+  --clr-dark: #162542;
+  --clr-blue: #7B8BAD;
+
+  /* font-family: 'Barlow', sans-serif; 
+  font-weights - 500 (med), 900 (black) */
+
+  --ff-sans: 'Barlow', sans-serif;
+
+  /* font sizes, line-heights, weights */
+  /* h1 - 56px/56px line height, 900 */
+ /* h1 (mobile/tablet) - 48px/48px, 900*/
+  --fs-800: 3rem;
+  /* h2 - 32px/36px line height, 900 */
+  --fs-700: 2rem;
+  /* h3 - 24px/28px line height, 900 */
+  --fs-600: 1.5rem;
+  /* Hero (p) - 18px/26px, 500 */
+  --fs-500: 1.125rem;
+  /* Body (p) - 16p x/26px line height, 500 */
+  /* Button text - uppercase, 700 weight */
+  --fs-400: 1rem;
+
+}
+
+@media (min-width: 62em) {
+  :root {
+    --fs-800: 3.5rem;
+  }
+}
+
+/* Typography */
+.ff-sans { font-family: var(--ff-sans); }
+
+.uppercase { text-transform: uppercase; }
+
+.fs-900 { font-size: var(--fs-900); }
+.fs-800 { font-size: var(--fs-800); }
+.fs-700 { font-size: var(--fs-700); }
+.fs-600 { font-size: var(--fs-600); }
+.fs-500 { font-size: var(--fs-500); }
+.fs-400 { font-size: var(--fs-400); }
+
+.fs-900,
+.fs-800 {
+  line-height: 1;
+}
+.fs-700
+.fs-600 {
+  line-height: 1.1;
+}
+
+
+/* ======================== */
+/* Reset and General Styles */
+/* ======================== */
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-body);
+  text-align: left;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-offwhite);
+  color: var(--clr-lm-dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+img,
+picture {
+  max-width: 100%;
+  min-height: 100%;
+}
+
+img {
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* --------------------- */
+/*    Utility classes    */
+/* --------------------- */
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1110px;
+}
+
+/* ---------------- */
+/* Components       */
+/* ---------------- */
+
+.button {
+  font-family: var(--ff-sans);
+  font-size: var(--fs-400);
+  /* font-weight: 700; */
+  text-transform: uppercase;
+  padding: 1em 1.6em;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-1 {
+  background-color: var(--clr-brand-primary);
+  color: var(--clr-white);
+}
+
+.btn-1:hover,
+.btn-1:active {
+  background-color: var(--clr-brand-light);
+}
+
+.btn-2 {
+  background-color: var(--clr-gray);
+  color: var(--clr-dark);
+}
+
+.btn-2:hover,
+.btn-2:active {
+  background-color: var(--clr-dark);
+  color: var(--clr-white);
+}
