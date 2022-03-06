@@ -9,15 +9,12 @@
   --clr-brand-light: #FF9B62;
   --clr-dark: #162542;
   --clr-blue: #7B8BAD;
-
-  /* font-family: 'Barlow', sans-serif; 
+  /* font 'Barlow', sans-serif; 
   font-weights - 500 (med), 900 (black) */
-
   --ff-sans: 'Barlow', sans-serif;
-
   /* font sizes, line-heights, weights */
   /* h1 - 56px/56px line height, 900 */
- /* h1 (mobile/tablet) - 48px/48px, 900*/
+  /* h1 (mobile/tablet) - 48px/48px, 900*/
   --fs-800: 3rem;
   /* h2 - 32px/36px line height, 900 */
   --fs-700: 2rem;
@@ -28,7 +25,6 @@
   /* Body (p) - 16p x/26px line height, 500 */
   /* Button text - uppercase, 700 weight */
   --fs-400: 1rem;
-
 }
 
 @media (min-width: 62em) {
@@ -77,14 +73,14 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: var(--ff-body);
+  font-family: var(--ff-sans);
   text-align: left;
   line-height: 1.6;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: var(--clr-offwhite);
-  color: var(--clr-lm-dark);
+  background-color: var(--clr-white);
+  color: var(--clr-blue);
 }
 
 h1,
@@ -98,6 +94,7 @@ figure,
 picture {
   margin: 0;
 }
+
 
 img,
 picture {
@@ -115,6 +112,16 @@ textarea,
 select {
   font: inherit;
 }
+
+/* Typography */
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  color: var(--clr-dark);
+}
+
+
 
 /* --------------------- */
 /*    Utility classes    */
@@ -142,7 +149,7 @@ select {
   font-size: var(--fs-400);
   /* font-weight: 700; */
   text-transform: uppercase;
-  padding: 1em 1.6em;
+  padding: 1em 1.7em;
   border-radius: 8px;
   border: none;
   cursor: pointer;
@@ -167,4 +174,26 @@ select {
 .btn-2:active {
   background-color: var(--clr-dark);
   color: var(--clr-white);
+}
+
+.product-pic img {
+  border-radius: 20px;
+}
+
+/* Layout */
+
+.grid-top {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-bottom {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* cards sections */
+
+
+/* footer */
+.footer-inner {
+  text-align: center;
 }
