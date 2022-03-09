@@ -38,14 +38,13 @@
 
 .uppercase { text-transform: uppercase; }
 
-.fs-900 { font-size: var(--fs-900); }
+/* .fs-900 { font-size: var(--fs-900); } */
 .fs-800 { font-size: var(--fs-800); }
 .fs-700 { font-size: var(--fs-700); }
 .fs-600 { font-size: var(--fs-600); }
 .fs-500 { font-size: var(--fs-500); }
 .fs-400 { font-size: var(--fs-400); }
 
-.fs-900,
 .fs-800 {
   line-height: 1;
 }
@@ -180,15 +179,100 @@ h3 {
   border-radius: 20px;
 }
 
+/* header */
+
+.header-inner {
+  padding: 3.5em 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+}
+
 /* Layout */
 
-.grid-top {
-  grid-template-columns: 1fr 1fr;
+/* .text-block-1 {
+  grid-area: text-block-1;
 }
 
-.grid-bottom {
-  grid-template-columns: 1fr 1fr 1fr;
+.text-block-2 {
+  grid-area: text-block-2;
 }
+
+.solid-block {
+  background-color: var(--clr-gray);
+}
+
+.solid-right {
+  grid-area: solid-right;
+}
+
+.solid-left {
+  grid-area: solid-left;
+}
+
+.product-img-1 {
+  grid-area: product-img-1;
+}
+
+.product-img-2 {
+  grid-area: product-img-2;
+}
+
+.product-img-3 {
+  grid-area: product-img-3;
+} */
+
+.top-row {
+  grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+  gap: 1.875em;
+  align-items: center;
+}
+
+
+/* text-box layouts */
+.hero-text {
+  flex-direction: column;
+
+}
+
+.hero-text h1 {
+  margin-bottom: .7em;
+}
+
+.hero-text p {
+  margin-bottom: 40px;
+  max-width: 45ch;
+}
+
+.note {
+  margin-left: 40px;
+}
+
+.product-pic {
+	position: relative;
+	width: 100%;
+}
+
+.hero-img {
+  width: 100vw;
+  object-fit: contain;
+
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 690px;
+  }
+  
+  .hero-img {
+    width: auto;
+    height: 425px;
+  }
+}
+
+
 
 /* cards sections */
 
@@ -197,3 +281,15 @@ h3 {
 .footer-inner {
   text-align: center;
 }
+
+
+/* .product-grid {
+	display: grid;
+	grid-template-columns: repeat(12, 65px);
+	grid-template-rows: 1fr 0fr;
+	align-items: center;
+	gap: 0 30px;
+	margin: 0;
+	margin-top: 40px;
+	grid-template-areas: "img-container img-container img-container img-container img-container img-container img-container img-container . product-text product-text product-text";
+} */

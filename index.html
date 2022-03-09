@@ -12,72 +12,79 @@
 </head>
 <body>
   <header class="header">
-    <div class="container">
-      <div class="header-inner">
-        <a href="index.html" aria-label="typemaster home page"><img src="./assets/shared/logo.svg" alt="" class="logo"></a>
-      </div>
+    <div class="header-inner container flex">
+      <a href="index.html" aria-label="typemaster home page" class="logo"><img src="./assets/shared/logo.svg" alt="" class=""></a>
       <button class="button btn-2">Pre-order now</button>
     </div>
   </header>
 
   <main>
-    <section>
+    <section class="product-highlights">
+      <div class="top-row container">
 
-      <div class="container grid">
-        <div class="grid grid-top">
+        <!-- desktop - top grid row -->
+        <div class="flex hero-text text-block-1">
+          <h1>Typemaster keyboard</h1>
+          <p class="fs-500">Improve your productivity and gaming without breaking the bank. Upgrade to a high quality mechanical typing experience.</p>
           <div>
-            <h1>Typemaster keyboard</h1>
-            <p class="fs-500">Improve your productivity and gaming without breaking the bank. Upgrade to a high quality 
-              mechanical typing experience.</p>
-            <div>
-              <button class="button btn-1">Pre-order now</button>
-              <span class="note fs-400 uppercase">Release on 5/27</span>
-            </div>
+            <button class="button btn-1">Pre-order now</button>
+            <span class="note fs-400 uppercase">Release on 5/27</span>
           </div>
-          <div>
-            <picture class="product-pic">
-              <!-- placeholder media values -->
-              <source media="(min-width: 64em)" srcset="./assets/desktop/image-keyboard.jpg">
-              <source media="(min-width: 42em)" srcset="./assets/tablet/image-keyboard.jpg">
-              <img src="./assets/mobile/image-keyboard.jpg" alt="">
-            </picture>
-          </div>
-           <!-- user :after pseudo -->
-           <div class="top-right-spacer"></div>
         </div>
 
-        <div class="grid grid-bottom">
+        <div class="hero-img product-img-1">
+          <picture class="product-pic">
+            <!-- placeholder media values -->
+            <source media="(min-width: 64em)" srcset="./assets/desktop/image-keyboard.jpg">
+            <source media="(min-width: 42em)" srcset="./assets/tablet/image-keyboard.jpg">
+            <img src="./assets/mobile/image-keyboard.jpg" alt="">
+          </picture>
+        </div>
 
-          <div>
+      </div>
+      <!-- end first row -->
+      <!-- <div class="solid-block solid-right">
+        <img src="./assets/shared/pattern-square.svg" alt="">
+      </div> -->
+
+
+
+
+        <!-- desktop - second grid row -->
+        <!-- <div id="bottom-row" class="bottom-row container">
+          <div class="product-img-2">
             <picture class="product-pic">
-              <!-- placeholder media values -->
-              <source media="(min-width: 64em)" srcset="./assets/desktop/image-glass-and-keyboard.jpg">
-              <source media="(min-width: 42em)" srcset="./assets/tablet/image-glass-and-keyboard.jpg">
-              <img src="./assets/mobile/image-glass-and-keyboard.jpg" alt="">
-            </picture>
-          </div>
-          <div>
-            <picture class="product-pic">
-              <!-- placeholder media values -->
               <source media="(min-width: 64em)" srcset="./assets/desktop/image-phone-and-keyboard.jpg">
               <source media="(min-width: 42em)" srcset="./assets/tablet/image-phone-and-keyboard.jpg">
               <img src="./assets/mobile/image-phone-and-keyboard.jpg" alt="">
             </picture>
           </div>
-          <div>
-            <h2>Mechanical wireless keyboard</h2>
-            <p class="fs-400">The Typemaster keyboard boasts top-notch build and practical design. It offers a wide variety 
-              of switches and keycaps, along with reliable wireless connectivity.</p>
+  
+          <div class="product-img-3">
+            <picture class="product-pic">
+              <source media="(min-width: 64em)" srcset="./assets/desktop/image-glass-and-keyboard.jpg">
+              <source media="(min-width: 42em)" srcset="./assets/tablet/image-glass-and-keyboard.jpg">
+              <img src="./assets/mobile/image-glass-and-keyboard.jpg" alt="">
+            </picture>
           </div>
-          <!-- user :before pseudo -->
-          <div class="bottom-left-spacer"></div>
-        </div>
-      </div>
+  
+          <div class="text-block-2">
+            <h2>Mechanical wireless keyboard</h2>
+            <p class="fs-400">The Typemaster keyboard boasts top-notch build and practical design. It offers a wide variety of switches and keycaps, along with reliable wireless connectivity.</p> 
+          </div>
+
+          <div class="solid-block solid-left">
+            <img src="./assets/shared/pattern-square.svg" alt="">
+          </div>
+
+        </div> -->
+        <!-- end second row -->
+
 
     </section>
 
     <!-- product card section -->
-    <section>
+    <!-- <section>
       <div class="container grid">
         <div class="card">
           <h3>Highly compatible</h3>
@@ -104,17 +111,17 @@
           </p>
         </div>
       </div>
-    </section>
+    </section> -->
 
   </main>
 
-  <footer>
+  <!-- <footer>
     <div class="footer-inner">
       <p>
         <span class="copy">Typemaster 2021 </span>| All Rights Reserved
       </p>
     </div>
-  </footer>
+  </footer> -->
   
 </body>
 </html>
