@@ -12,17 +12,10 @@
   /* font 'Barlow', sans-serif; 
   font-weights - 500 (med), 900 (black) */
   --ff-sans: 'Barlow', sans-serif;
-  /* font sizes, line-heights, weights */
-  /* h1 - 56px/56px line height, 900 */
-  /* h1 (mobile/tablet) - 48px/48px, 900*/
   --fs-800: 3rem;
-  /* h2 - 32px/36px line height, 900 */
   --fs-700: 2rem;
-  /* h3 - 24px/28px line height, 900 */
   --fs-600: 1.5rem;
-  /* Hero (p) - 18px/26px, 500 */
   --fs-500: 1.125rem;
-  /* Body (p) - 16p x/26px line height, 500 */
   --fs-400: 1rem;
 }
 
@@ -56,9 +49,7 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  background-color: var(--clr-white);
   color: var(--clr-blue);
-  mix-blend-mode: multiply;
 }
 
 h1,
@@ -329,13 +320,14 @@ h3 {
   grid-area: dual-img;
 }
 
-.orange-overlay {
-  background-color: var(--clr-brand-primary);
+.orange-overlay::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
   border-radius: 20px;
-}
-
-.orange-img {
-  mix-blend-mode: multiply;
+	background: var(--clr-brand-primary);
+	mix-blend-mode: multiply;
 }
 
 
@@ -385,11 +377,6 @@ h3 {
 .text-block-2-inner  h2 {
   margin-bottom: .8em;
 }
-
-/* .text-block-2-inner p {
-  max-width: 29ch;
-} */
-
 
 /* tablet grid layout */
 @media (min-width: 640px) {
